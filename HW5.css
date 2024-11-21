@@ -1,0 +1,144 @@
+/* 基本樣式設定 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+    background-color: #f0f0f0;
+    height: 200vh; 
+}
+
+/* 主容器，包含左右兩側 */
+.main-container {
+    display: flex;
+    width: 90%;  
+    max-width: 900px;
+    margin: 60px auto;  
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/* 左側面板樣式 */
+.left-panel {
+    width: 40%;  
+    background-color: #7B7B7B;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: 3px solid #34495e;
+    box-sizing: border-box;
+}
+
+.photo-panel {
+    width: 100%;
+    height: 200px;
+    background-color: #34495e;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.photo-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.text-content h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.text-content p {
+    margin-bottom: 7px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.nccu-icon {
+    width: 80px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+/* 右側面板樣式 */
+.right-panel {
+    width: 60%;  
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* 標題與內容間隔 */
+.right-panel h2, 
+.left-panel h2 {
+    color: #333;
+    margin-bottom: 10px;  
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc; /* 底部分隔線 */
+    padding-bottom: 5px;          /* 與分隔線的間距 */
+}
+
+.timeline .entry {
+    margin-bottom: 8px;  
+}
+
+.timeline .year {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.homework-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.homework-list li {
+    margin-bottom: 6px;  
+}
+
+.favorite-music .albums {
+    display: flex;
+    gap: 8px;  
+    justify-content: flex-start;
+}
+
+.favorite-music .album-item {
+    text-align: center;
+    width: auto;
+}
+
+.favorite-music .album-item img {
+    width: 50px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+}
+
+.favorite-music p {
+    font-size: 16px;
+    color: #333;
+}
+
+.note {
+    margin-top: 10px;  
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
